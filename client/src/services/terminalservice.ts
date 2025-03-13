@@ -50,7 +50,7 @@ export class TerminalService {
             this.socket.disconnect();
         }
 
-        this.socket = io("http://localhost:3000", {
+        this.socket = io("http://172.20.34.8:3000", {
             transports: ["websocket"],
             reconnection: true,
             forceNew: true
